@@ -1,21 +1,21 @@
 :root {
-  --primary-color: #012042; /* สีหลัก */
-  --secondary-color: #485E77; /* สีรอง */
-  --thirdary-color: #838383;
-  --forthnary-color: #D9D9D9;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  box-sizing: border-box; /* เพิ่มเพื่อป้องกันปัญหาความกว้าง/ความสูง */
-}
-
-@media only screen and (max-width: 768px) {
-  .background-container-model {
+    --primary-color: #012042; /* สีหลัก */
+    --secondary-color: #485E77; /* สีรอง */
+    --thirdary-color: #838383;
+    --forthnary-color: #D9D9D9;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box; /* ป้องกันปัญหาความกว้าง/ความสูง */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .background-container-model {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -23,82 +23,84 @@
       background: var(--primary-color);
       width: 100%; /* ใช้ 100% แทน 97vw */
       height: 100vh;
-  }
-
-  .logo-model-container {
+    }
+  
+    .logo-model-container {
       width: 10vw;
       height: 10vw;
-  }
-
-  .logo-model-title {
+    }
+  
+    .logo-model-title {
       font-size: 2vh;
-  }
-
-  .scan-btn {
+    }
+  
+    .scan-btn {
       background-color: var(--forthnary-color);
       width: 15vw;
       height: 15vw;
       position: absolute;
-      border: none; /* ใช้คำที่ชัดเจน */
       top: 10vh;
       left: 1vh;
       padding: 5px;
+      border: none;
       border-radius: 10px;
-  }
-
-  .model-container {
+    }
+  
+    .model-container {
       height: 30vh;
       width: 30vh;
       background: radial-gradient(circle, #4d4d4d 0%, var(--primary-color) 70%);
       border-radius: 50%; /* ใช้ 50% แทน 100% */
       margin-top: 4vh;
-  }
-
-  .model-menu-container {
+    }
+  
+    .model-menu-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100vw;
+      width: 95vw;
       margin-top: 10vh;
       background-color: var(--thirdary-color);
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
       padding: 0;
-  }
-
-  .menu-container {
+      margin: 0;
+      animation: slideUp 1s ease-in-out forwards; /* เรียกใช้ animation */
+    }
+  
+    .menu-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* ใช้ 1fr แทน vw */
       gap: 1vw;
-      padding-top: 2vh;
-      width: 100%; /* ใช้ 100% แทน margin-left/right */
+      padding: 2vh 0; /* ใช้ padding แทน margin-top */
+      width: 100%;
       height: 98%;
-      margin-top: 1vh;
       background-color: #ccc;
       border: 1px solid var(--primary-color);
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
-  }
-
-  .menu-item-container {
+    }
+  
+    .menu-item-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 8px;
-  }
-
-  .menu-icon {
+    }
+  
+    .menu-icon {
       width: 15vh;
       height: 15vh;
       background-color: #ccc;
       border-radius: 20px;
       border: 1px solid var(--secondary-color);
-  }
-
-  .menu-title {
+    }
+  
+    .menu-title {
       font-size: 2.5vh;
       color: var(--primary-color); /* ใช้ variable แทนค่าสี */
+    }
   }
-}
+  
