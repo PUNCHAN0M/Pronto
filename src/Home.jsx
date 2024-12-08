@@ -5,7 +5,7 @@ const Home = () => {
   let navigate = useNavigate();
 
   const [agreement, setAgreement] = useState(false);
-  const [condition, setCondition] = useState("none");
+  const [condition, setCondition] = useState(false);
 
   const handleClickBtn = () => {
     // setCondition("condition);
@@ -25,7 +25,7 @@ const Home = () => {
 
   return (
     <div className="background-container">
-      {condition === "none" ? (
+      {!condition ? (
         <div className="first-container">
           <div className="logo-container">
             <svg
@@ -52,7 +52,7 @@ const Home = () => {
             Enter
           </button>
         </div>
-      ) : condition === "show" ? (
+      ) : condition  ? (
         <div className="first-container-condition">
           <div className="container-condition">
             <div className="svg-logo-scale-down">

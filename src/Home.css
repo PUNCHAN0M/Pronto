@@ -60,6 +60,7 @@
     font-size: 4vh;
     border-radius: 50px;
     border-width: 1px;
+    border-style: solid;
     border-color: #325481;
     text-align: center;
   }

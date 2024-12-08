@@ -98,7 +98,7 @@ const WebcamComponent= () => {
         <div className="camera-frame"></div>
       </div>
       <div className="text-container">
-        <div className="text-title">SCAN : {qrCode}</div>
+        <button className="text-title" onClick={()=>navigate("/model")}>SCAN : {qrCode}</button>
         <div className="text-paragraph">
           Scan QR Code for an information about engine part
         </div>
