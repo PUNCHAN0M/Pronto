@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #012042; /* สีหลัก */
+  --secondary-color: #485E77; /* สีรอง */
+  --thirdary-color: #838383;
+  --forthnary-color: #D9D9D9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .background-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color); /* ใช้สีหลัก */
+    height: 100vh;
+  }
+
+  .first-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+  }
+  .svg-logo {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+    height: 50vw;
+    margin-top: 15vh;
+    margin-right: 5vw;
+  }
+
+  .title-name {
+    margin: 0;
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 2vh;
+  }
+
+  .enter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 7vh;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-size: 4vh;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #325481;
+    text-align: center;
+  }
+  .svg-logo-condition {
+      width: 40vw;
+      height: 40vw;
+      margin-right: 5vw;
+  }
+  .svg-logo-scale-down {
+      height: 50vw;
+      animation: scaleDown 1s ease-in-out forwards; /* เปลี่ยนระยะเวลา 1s ตามต้องการ */
+  }
+  .first-container-condition{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .container-condition{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      
+  }
+  .container-condition-down{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vh;
+
+  }
+  .container-checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+  }
+  .title-condition{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .checkbox-item{
+    margin-right: 5vw;
+  }
+  .motion-slide-up{
+      animation-delay: 1s; /* หน่วงเวลา 1 วินาที */
+      animation: slideUp 1s ease-in-out forwards; /* เรียกใช้ animation */
+  }
+  li{
+    margin-left: 5vw;
+  }
+}
+
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1); /* ขนาดเดิม */
+  }
+  to {
+    transform: scale(0.1); /* ลดลง 50% */
+  }
+} 
+  /* Animation สำหรับเลื่อนขึ้น */
+  @keyframes slideUp {
+      from {
+          transform: translateY(100%); /* เริ่มจากด้านล่าง */
+          opacity: 0; /* เริ่มต้นโปร่งใส */
+      }
+      to {
+          transform: translateY(0%); /* อยู่ตำแหน่งปกติ */
+          opacity: 1; /* แสดงเต็ม */
+      }
+  }
