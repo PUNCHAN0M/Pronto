@@ -50,8 +50,8 @@
     }
   
     .model-container {
-      height: 30vh;
-      width: 30vh;
+      height: 100%;
+      width: 100%;
       background: radial-gradient(circle, #4d4d4d 0%, var(--primary-color) 70%);
       border-radius: 50%; /* ใช้ 50% แทน 100% */
       margin-top: 4vh;
