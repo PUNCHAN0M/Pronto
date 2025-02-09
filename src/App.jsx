@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/BracketorMountingArm " element={<ModelPart1 />}></Route>
+        <Route path="/BracketorMountingArm" element={<ModelPart1 />}></Route>
         <Route path="/BasePlatewithBracket" element={<ModelPart2 />}></Route>
         <Route path="/GENEVAwheel" element={<ModelPart3 />}></Route>
         <Route path="/model" element={<MenuModel />}></Route>
