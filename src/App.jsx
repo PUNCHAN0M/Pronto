@@ -4,6 +4,8 @@ import MenuModel from "./MenuModel.jsx";
 import ModelPart1 from "./ModelPart1.jsx";
 import ModelPart2 from "./ModelPart2.jsx";
 import ModelPart3 from "./ModelPart3.jsx";
+import ModelPart4 from "./ModelPart4.jsx";
+
 function App() {
   return (
     <BrowserRouter>
@@ -11,6 +13,7 @@ function App() {
         <Route path="/BracketorMountingArm" element={<ModelPart1 />}></Route>
         <Route path="/BasePlatewithBracket" element={<ModelPart2 />}></Route>
         <Route path="/GENEVAwheel" element={<ModelPart3 />}></Route>
+        <Route path="/AirCompressorFan" element={<ModelPart4 />}></Route>
         <Route path="/model" element={<MenuModel />}></Route>
       </Routes>
     </BrowserRouter>
